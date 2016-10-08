@@ -2,10 +2,11 @@
 
 @main("Welcome to Play") {
 
-<ul id="persons"></ul>
 
+  <ul  id="persons">
 
-  <script src='@routes.Assets.at("public/javascripts/index.min.js")' >  </script>
+  </ul>
+
 
 
     <form action="@routes.Application.addPerson()" method="post">
@@ -13,6 +14,22 @@
       <button>Add Person</button>
     </form>
 
+    <script>
+    $.ajax({
+               type : 'GET',
+               url : "@routes.Application.getPersons()",
+               dataType : "JSON",
+               success : function(data) {
+                 for(var i= 0; i< data.length;i++)
+                 $('#persons').append('<li>'+data[i].name+'</li>');
+
+               },
+               error : function(data) {
+                 $('#persons').append('no');
+
+               }
+           });
+    </script>
 
 
 
