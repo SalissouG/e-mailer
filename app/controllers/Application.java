@@ -27,4 +27,12 @@ public class Application extends Controller {
         return ok(toJson(persons));
     }
 
+    public static Result login() {
+    return ok(
+        login.render()
+    );
+   }
+
+
+
 }
