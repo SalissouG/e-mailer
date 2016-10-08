@@ -1,0 +1,19 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+<ul id="persons"></ul>
+
+
+  <script src='@routes.Assets.at("public/javascripts/index.min.js")' >  </script>
+
+
+    <form action="@routes.Application.addPerson()" method="post">
+      <input type="text" name="name" />
+      <button>Add Person</button>
+    </form>
+
+
+
+
+}
