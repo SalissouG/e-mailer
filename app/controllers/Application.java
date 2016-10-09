@@ -33,9 +33,25 @@ public class Application extends Controller {
     );
    }
 
+   public static Result inscription() {
+   return ok(
+       inscription.render()
+   );
+  }
+
+
    public static Result validateLogin() {
+     Login  loginForm =  Form.form(Login.class).bindFromRequest().get();
+
+     if(loginForm.email.equals("sgarbadjibo@yahoo.com") && loginForm.mdp.equals("123"))
+     return redirect(routes.Application.index());
+     else return redirect(routes.Application.login());
+   }
+
+   public static Result validateInscription() {
         return redirect(routes.Application.index());
    }
+
 
 
 }
