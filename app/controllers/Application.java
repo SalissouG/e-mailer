@@ -1,6 +1,6 @@
 package controllers;
 import play.*;
-import models.Person;
+import models.Message;
 import play.data.Form;
 import play.db.ebean.Model;
 import play.mvc.*;
@@ -16,15 +16,15 @@ public class Application extends Controller {
         return ok(index.render("Your new application is ready."));
     }
 
-    public static Result addPerson() {
-         Person person = Form.form(Person.class).bindFromRequest().get();
-         person.save();
+    public static Result addMessage() {
+         Message message = Form.form(Message.class).bindFromRequest().get();
+         message.save();
          return redirect(routes.Application.index());
     }
 
-    public static Result getPersons() {
-        List<Person> persons = new Model.Finder(String.class, Person.class).all();
-        return ok(toJson(persons));
+    public static Result getMessages() {
+        List<Message> messages = new Model.Finder(String.class, Message.class).all();
+        return ok(toJson(messages));
     }
 
     public static Result login() {
@@ -33,6 +33,9 @@ public class Application extends Controller {
     );
    }
 
+   public static Result validateLogin() {
+        return redirect(routes.Application.index());
+   }
 
 
 }
