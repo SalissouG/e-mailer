@@ -3,11 +3,13 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
-
-POST    /person                      controllers.Application.addPerson()
-
-GET     /persons                      controllers.Application.getPersons()
+GET     /page                  controllers.Application.index()
+POST    /message               controllers.Application.addMessage()
+GET     /messages              controllers.Application.getMessages()
+GET     /                      controllers.Application.login()
+POST    /login                 controllers.Application.validateLogin()
+GET     /inscription           controllers.Application.inscription()
+POST    /validateInscription   controllers.Application.validateInscription()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

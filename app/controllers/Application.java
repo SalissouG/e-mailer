@@ -1,19 +1,21 @@
 package controllers;
 import play.*;
 import models.Message;
+import models.Login;
 import play.data.Form;
 import play.db.ebean.Model;
 import play.mvc.*;
 import views.html.*;
 import java.util.*;
 import models.*;
-
-import static play.libs.Json.toJson;
+import static play.libs.Json.*;
 
 public class Application extends Controller {
 
+
+
     public static Result index() {
-        return ok(index.render("Your new application is ready."));
+        return ok(index.render());
     }
 
     public static Result addMessage() {
@@ -36,22 +38,25 @@ public class Application extends Controller {
    public static Result inscription() {
    return ok(
        inscription.render()
+
    );
   }
 
 
    public static Result validateLogin() {
-     Login  loginForm =  Form.form(Login.class).bindFromRequest().get();
 
-     if(loginForm.email.equals("sgarbadjibo@yahoo.com") && loginForm.mdp.equals("123"))
-     return redirect(routes.Application.index());
-     else return redirect(routes.Application.login());
+      Login  loginForm =  Form.form(Login.class).bindFromRequest().get();
+
+      if(loginForm.isValideLogin())
+      return   ok("ok");
+      else   return ok("error");
+
+
    }
 
    public static Result validateInscription() {
         return redirect(routes.Application.index());
    }
-
 
 
 }

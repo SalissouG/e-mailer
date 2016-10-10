@@ -1,6 +1,6 @@
-// @SOURCE:C:/Users/salis/test/conf/routes
-// @HASH:63d6a959c803a0a9ee1f0fc4696d1363d876695f
-// @DATE:Fri Oct 07 18:28:58 CEST 2016
+// @SOURCE:C:/Users/salis/ProjetWeb/monGit/e-mailer/conf/routes
+// @HASH:02cb547bb863e9269a55baadcfa43e24a04eef4d
+// @DATE:Mon Oct 10 11:37:29 CEST 2016
 
 package controllers;
 

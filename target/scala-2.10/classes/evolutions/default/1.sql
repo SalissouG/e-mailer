@@ -3,13 +3,20 @@
 
 # --- !Ups
 
-create table person (
-  id                        varchar(255) not null,
-  name                      varchar(255),
-  constraint pk_person primary key (id))
+create table login (
+  mdp                       varchar(255),
+  email                     varchar(255))
 ;
 
-create sequence person_seq;
+create table message (
+  id                        varchar(255) not null,
+  message                   varchar(255),
+  destination               varchar(255),
+  objet                     varchar(255),
+  constraint pk_message primary key (id))
+;
+
+create sequence message_seq;
 
 
 
@@ -18,9 +25,11 @@ create sequence person_seq;
 
 SET REFERENTIAL_INTEGRITY FALSE;
 
-drop table if exists person;
+drop table if exists login;
+
+drop table if exists message;
 
 SET REFERENTIAL_INTEGRITY TRUE;
 
-drop sequence if exists person_seq;
+drop sequence if exists message_seq;
 

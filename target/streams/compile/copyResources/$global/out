@@ -1,6 +1,6 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(C:\Users\salis\test\conf\application.conf,C:\Users\salis\test\target\scala-2.10\classes\application.conf)[0m
-[0m[[0mdebug[0m] [0m	(C:\Users\salis\test\conf\evolutions,C:\Users\salis\test\target\scala-2.10\classes\evolutions)[0m
-[0m[[0mdebug[0m] [0m	(C:\Users\salis\test\conf\routes,C:\Users\salis\test\target\scala-2.10\classes\routes)[0m
-[0m[[0mdebug[0m] [0m	(C:\Users\salis\test\conf\evolutions\default,C:\Users\salis\test\target\scala-2.10\classes\evolutions\default)[0m
-[0m[[0mdebug[0m] [0m	(C:\Users\salis\test\conf\evolutions\default\1.sql,C:\Users\salis\test\target\scala-2.10\classes\evolutions\default\1.sql)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\conf\application.conf,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\conf\evolutions,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\conf\routes,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\conf\evolutions\default,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\conf\evolutions\default\1.sql,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\evolutions\default\1.sql)[0m
