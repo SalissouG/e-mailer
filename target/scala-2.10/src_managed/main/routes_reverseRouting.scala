@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/salis/ProjetWeb/monGit/e-mailer/conf/routes
-// @HASH:02cb547bb863e9269a55baadcfa43e24a04eef4d
-// @DATE:Mon Oct 10 11:37:29 CEST 2016
+// @HASH:86bcaaae8cce6b31cab85da918e9407b7bf68b05
+// @DATE:Mon Oct 10 21:28:23 CEST 2016
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,7 +13,9 @@ import play.libs.F
 import Router.queryString
 
 
-// @LINE:15
+// @LINE:16
+// @LINE:14
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -23,11 +25,11 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
-// @LINE:15
+// @LINE:16
 class ReverseAssets {
     
 
-// @LINE:15
+// @LINE:16
 def at(file:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
 }
@@ -36,6 +38,8 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:14
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -58,19 +62,31 @@ def addMessage(): Call = {
 }
                                                 
 
-// @LINE:10
+// @LINE:14
+def messageInscription(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "messageInscription")
+}
+                                                
+
+// @LINE:11
 def validateLogin(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "login")
 }
                                                 
 
-// @LINE:11
+// @LINE:9
+def getUsers(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "users")
+}
+                                                
+
+// @LINE:12
 def inscription(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "inscription")
 }
                                                 
 
-// @LINE:12
+// @LINE:13
 def validateInscription(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "validateInscription")
 }
@@ -82,7 +98,7 @@ def index(): Call = {
 }
                                                 
 
-// @LINE:9
+// @LINE:10
 def login(): Call = {
    Call("GET", _prefix)
 }
@@ -94,7 +110,9 @@ def login(): Call = {
                   
 
 
-// @LINE:15
+// @LINE:16
+// @LINE:14
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -104,11 +122,11 @@ def login(): Call = {
 // @LINE:6
 package controllers.javascript {
 
-// @LINE:15
+// @LINE:16
 class ReverseAssets {
     
 
-// @LINE:15
+// @LINE:16
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -122,6 +140,8 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:14
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -154,7 +174,18 @@ def addMessage : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:10
+// @LINE:14
+def messageInscription : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.messageInscription",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "messageInscription"})
+      }
+   """
+)
+                        
+
+// @LINE:11
 def validateLogin : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.validateLogin",
    """
@@ -165,7 +196,18 @@ def validateLogin : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:11
+// @LINE:9
+def getUsers : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.getUsers",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "users"})
+      }
+   """
+)
+                        
+
+// @LINE:12
 def inscription : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.inscription",
    """
@@ -176,7 +218,7 @@ def inscription : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:12
+// @LINE:13
 def validateInscription : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.validateInscription",
    """
@@ -198,7 +240,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:9
+// @LINE:10
 def login : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.login",
    """
@@ -215,7 +257,9 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:15
+// @LINE:16
+// @LINE:14
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -226,11 +270,11 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:15
+// @LINE:16
 class ReverseAssets {
     
 
-// @LINE:15
+// @LINE:16
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this, "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -239,6 +283,8 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:14
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -261,19 +307,31 @@ def addMessage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:10
+// @LINE:14
+def messageInscription(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.messageInscription(), HandlerDef(this, "controllers.Application", "messageInscription", Seq(), "GET", """""", _prefix + """messageInscription""")
+)
+                      
+
+// @LINE:11
 def validateLogin(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.validateLogin(), HandlerDef(this, "controllers.Application", "validateLogin", Seq(), "POST", """""", _prefix + """login""")
 )
                       
 
-// @LINE:11
+// @LINE:9
+def getUsers(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.getUsers(), HandlerDef(this, "controllers.Application", "getUsers", Seq(), "GET", """""", _prefix + """users""")
+)
+                      
+
+// @LINE:12
 def inscription(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.inscription(), HandlerDef(this, "controllers.Application", "inscription", Seq(), "GET", """""", _prefix + """inscription""")
 )
                       
 
-// @LINE:12
+// @LINE:13
 def validateInscription(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.validateInscription(), HandlerDef(this, "controllers.Application", "validateInscription", Seq(), "POST", """""", _prefix + """validateInscription""")
 )
@@ -285,7 +343,7 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:9
+// @LINE:10
 def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.login(), HandlerDef(this, "controllers.Application", "login", Seq(), "GET", """""", _prefix + """""")
 )

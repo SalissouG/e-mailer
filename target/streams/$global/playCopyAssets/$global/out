@@ -1,8 +1,10 @@
 [0m[[0mdebug[0m] [0mCopy play resource mappings: [0m
 [0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\images\favicon.png,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\images\favicon.png)[0m
-[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\javascripts\getMessages.js,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\javascripts\getMessages.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\javascripts\bootstrap.min.js,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\javascripts\bootstrap.min.js)[0m
 [0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\javascripts\jquery-1.9.0.min.js,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\javascripts\jquery-1.9.0.min.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\javascripts\jquery.min.js,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\javascripts\jquery.min.js)[0m
 [0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\javascripts\sweetalert2.js,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\javascripts\sweetalert2.js)[0m
 [0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\javascripts\sweetalert2.min.js,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\javascripts\sweetalert2.min.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\stylesheets\bootstrap.min.css,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\stylesheets\bootstrap.min.css)[0m
 [0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\stylesheets\sweetalert2.css,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\stylesheets\sweetalert2.css)[0m
 [0m[[0mdebug[0m] [0m	(C:\Users\salis\ProjetWeb\monGit\e-mailer\public\stylesheets\sweetalert2.min.css,C:\Users\salis\ProjetWeb\monGit\e-mailer\target\scala-2.10\classes\public\stylesheets\sweetalert2.min.css)[0m
