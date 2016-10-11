@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/salis/ProjetWeb/monGit/e-mailer/conf/routes
 // @HASH:86bcaaae8cce6b31cab85da918e9407b7bf68b05
-// @DATE:Mon Oct 10 21:28:23 CEST 2016
+// @DATE:Tue Oct 11 18:32:27 CEST 2016
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._

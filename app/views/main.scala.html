@@ -150,23 +150,29 @@ else
 function loading()
  {
      getAllMessages()
-     
  }
 
 function getAllMessages()
-  {$.ajax({
+  {
+
+    $.ajax({
              type : 'GET',
              url : "@routes.Application.getMessages()",
              dataType : "JSON",
              success : function(data) {
+               $('#messages').html('');
               for(var i= 0; i< data.length;i++)
-               $('#messages').append('<div class="panel panel-default">'+
-                                     '<div class="panel-heading">  Destinataire: '+data[i].destination+'  </br>  Objet: '+data[i].objet+'</div>'+
-                                     '<div class="panel-body">'+data[i].message +'</div>'+
-                                     '</div>'
-                                     );
+              {
 
-                                      $('#nbr').append(data.length);
+                $('#messages').append('<div class="panel panel-default">'+
+                                      '<div class="panel-heading">  Destinataire: '+data[i].destination+'  </br>  Objet: '+data[i].objet+'</div>'+
+                                      '<div class="panel-body">'+data[i].message +'</div>'+
+                                      '</div>'
+                                      );
+              }
+
+                                     $('#nbr').html('');
+                                    $('#nbr').append(data.length);
 
 
              },

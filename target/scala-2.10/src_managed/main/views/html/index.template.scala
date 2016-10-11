@@ -30,17 +30,13 @@ Seq[Any](_display_(Seq[Any](/*2.2*/main("Test Jacoop")/*2.21*/{_display_(Seq[Any
   <ul class="w3-navbar w3-black">
     <li><a href="#" class="tablink" onclick="openCity(event, 'nouveau');">  Nouveau message</a></li>
     <li><a href="#" class="tablink" onclick="openCity(event, 'messages');">  Boîte d’envoi <span class="badge" id="nbr"></span></a> </li>
-    
-
   </ul>
 
   <div class="row">
       <div class="col-lg-12">
-        &nbsp;
+           &nbsp;
       </div>
   </div>
-
-
 
   <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
@@ -74,8 +70,8 @@ Seq[Any](_display_(Seq[Any](/*2.2*/main("Test Jacoop")/*2.21*/{_display_(Seq[Any
 
 </div>
 </div>
-<a href=""""),_display_(Seq[Any](/*50.11*/routes/*50.17*/.Application.login)),format.raw/*50.35*/("""" ><span>Déconnexion</span></a>
-""")))})),format.raw/*51.2*/("""
+
+""")))})),format.raw/*47.2*/("""
 """))}
     }
     
@@ -88,11 +84,11 @@ Seq[Any](_display_(Seq[Any](/*2.2*/main("Test Jacoop")/*2.21*/{_display_(Seq[Any
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Oct 10 21:41:18 CEST 2016
+                    DATE: Tue Oct 11 22:39:19 CEST 2016
                     SOURCE: C:/Users/salis/ProjetWeb/monGit/e-mailer/app/views/index.scala.html
-                    HASH: 0d897e40e439647c87337b97ed86d2bad12bbdae
-                    MATRIX: 864->3|891->22|929->23|2346->1404|2361->1410|2401->1428|2466->1462
-                    LINES: 29->2|29->2|29->2|77->50|77->50|77->50|78->51
+                    HASH: 25c94e76bfc327655eccacee4af0fc982767de76
+                    MATRIX: 864->3|891->22|929->23|2325->1388
+                    LINES: 29->2|29->2|29->2|74->47
                     -- GENERATED --
                 */
             

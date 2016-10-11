@@ -66,7 +66,11 @@ public class Application extends Controller {
      {
         if(loginForm.email.equals(users.get(i).getEmail())
               && loginForm.mdp.equals(users.get(i).getMdp()))
-          return true;
+              {
+                return true;
+
+              }
+
      }
 
       return false;
@@ -96,6 +100,7 @@ public class Application extends Controller {
                     return "Un utilisteur est enregistré avec la même adresse mail.";
         }
         user.save();
+
         return "ok";
       }
 
